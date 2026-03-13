@@ -102,3 +102,12 @@ INSERT INTO order_items VALUES
 ('O1005','P105',2);
 
 
+## Final Normalized Structure (3NF)
+
+Customers(customer_id, customer_name, customer_email, customer_city)
+Products(product_id, product_name, category, unit_price)
+Sales_Reps(sales_rep_id, sales_rep_name, sales_rep_email, office_address)
+Orders(order_id, order_date, customer_id, sales_rep_id)
+Order_Items(order_id, product_id, quantity)
+
+
